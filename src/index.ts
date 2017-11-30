@@ -1,4 +1,2 @@
-export * from './interfaces';
-export * from './util';
-export * from './ssm-params-convict-adapter';
-
+import SSMParamsConvictAdapter from './ssm-params-convict-adapter';
+export default SSMParamsConvictAdapter;

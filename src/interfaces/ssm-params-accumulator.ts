@@ -1,4 +1,5 @@
 export interface ISSMParamsAccumulator {
-  promises: Array<Promise<any>>;
-  params: any;
+	paths: any;
+	config: any;
+	strictConfig: any;
 }

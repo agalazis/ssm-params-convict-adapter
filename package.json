@@ -27,17 +27,20 @@
   "homepage": "https://github.com/agalazis/ssm-params-convict-adapter#readme",
   "dependencies": {
     "@types/convict": "^4.1.1",
-    "@types/lodash": "^4.14.85",
-    "aws-param-store": "^1.0.1",
-    "lodash": "^4.17.4"
+    "@types/lodash": "^4.14.86",
+    "aws-ssm-parameters-injector": "^1.0.8",
+    "debug": "^3.1.0",
+    "lodash": "^4.17.4",
+    "winston": "2.4"
   },
   "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
     "@types/chai": "^4.0.1",
     "@types/del": "^3.0.0",
     "@types/gulp": "^4.0.4",
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.5",
-    "aws-sdk": "^2.156.0",
+    "@types/winston": "^2.3.7",
     "chai": "^4.1.0",
     "concurrently": "^3.5.0",
     "cross-env": "^5.0.1",
@@ -55,5 +58,10 @@
   "pre-commit": [
     "preCommit-msg",
     "lint-noFix"
-  ]
+  ],
+  "peerDependencies": {
+    "aws": "^0.0.3-2",
+    "aws-param-store": "^1.0.1",
+    "convict": "^4.0.1"
+  }
 }
