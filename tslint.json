@@ -9,7 +9,7 @@
 		"comment-format": [true, "check-space"],
 		"eofline": true,
 		"forin": true,
-		"indent": [true, "tabs"],
+		"indent": [true, "spaces" , 2],
 		"jsdoc-format": true,
 		"label-position": true,
 		"no-arg": true,
