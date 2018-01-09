@@ -12,4 +12,4 @@ cache:
   directories:
     - node_modules
 script:
-  - yarn install-peers && yarn lint && yarn test
+  - yarn lint && yarn test
