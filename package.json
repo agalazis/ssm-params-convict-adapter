@@ -13,7 +13,8 @@
     "test-watch": "ts-node accessories/test-watch-log.ts && cross-env NODE_ENV=test mocha tests/ --compilers ts:ts-node/register,tsx:ts-node/register --recursive --reporter spec --watch",
     "preCommit-msg": "ts-node accessories/pre-commit-log.ts",
     "copy-json": "gulp copy-json",
-    "clean-build": "gulp clean-build"
+    "clean-build": "gulp clean-build",
+    "install-peers": "node node_modules/install-peers/install.js"
   },
   "repository": {
     "type": "git",
@@ -50,6 +51,7 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
+    "install-peers": "^1.0.2",
     "lme": "^1.5.3",
     "mocha": "^3.4.2",
     "pre-commit": "^1.2.2",

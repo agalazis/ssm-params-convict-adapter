@@ -8,4 +8,4 @@ node_js:
   - "7"
   - "8"
 script:
-  - yarn install && yarn global add convict && yarn global add aws &&yarn lint && yarn test
+  - yarn install-peers && npm install convict && npm install aws &&yarn lint && yarn test
