@@ -12,9 +12,7 @@ cache:
   directories:
     - node_modules
 before_script:
-  - echo $(which node)
-  - echo $NODE_PATH
-  - npm install
+  - npm install -g $(npm version)
   - npm run install-peers
 script:
   - npm run lint && npm run test
