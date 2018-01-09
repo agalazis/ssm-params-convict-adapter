@@ -13,6 +13,6 @@ cache:
     - node_modules
 before_script:
   - yarn
-  - npm install-peers 
+  - npm run install-peers 
 script:
   - yarn lint && yarn test
