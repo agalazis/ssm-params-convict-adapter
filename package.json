@@ -1,12 +1,12 @@
 {
   "name": "ssm-params-convict-adapter",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Allows loading ssm parameters via convict",
   "main": "dist/index.js",
   "typings": "index.d.ts",
   "engine-strict": true,
   "engines": {
-      "node": ">=6.12.3"
+    "node": ">=6.12.3"
   },
   "scripts": {
     "prepublishOnly": "ts-node accessories/prepublish-log.ts && npm run build",
