@@ -4,6 +4,10 @@
   "description": "Allows loading ssm parameters via convict",
   "main": "dist/index.js",
   "typings": "index.d.ts",
+  "engine-strict": true,
+  "engines": {
+      "node": ">=6.12.3"
+  },
   "scripts": {
     "prepublishOnly": "ts-node accessories/prepublish-log.ts && npm run build",
     "build": "ts-node accessories/building-log.ts && npm run clean-build && npm run lint && ts-node accessories/real-build-log.ts && tsc && npm run copy-json",
