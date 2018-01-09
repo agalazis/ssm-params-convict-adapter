@@ -68,7 +68,7 @@
     "lint-noFix"
   ],
   "peerDependencies": {
-    "aws": "^0.0.3-2",
+    "aws-sdk": "^0.0.3-2",
     "convict": "^4.0.1"
   }
 }
