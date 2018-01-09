@@ -8,4 +8,4 @@ node_js:
   - "7"
   - "8"
 script:
-  - npm install convict && npm install aws && &&npm run lint && npm run test
+  - npm install convict && npm install aws &&npm run lint && npm run test
