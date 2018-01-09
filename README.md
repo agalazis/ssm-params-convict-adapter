@@ -8,7 +8,7 @@ Allows loading ssm parameters via convict
 [![Built with generator-ts-np](https://img.shields.io/badge/scaffolding-ts_np-2699ad.svg)](https://github.com/vajahath/generator-ts-np)
 [![Dependency Security Status](https://david-dm.org/agalazis/ssm-params-convict-adapter.svg)](https://david-dm.org/agalazis/ssm-params-convict-adapter)
 [![node version](https://img.shields.io/node/v/ssm-params-convict-adapter/latest.svg)]()
-[![bithound](https://img.shields.io/node/v/ssm-params-convict-adapter/latest.svg)](https://www.bithound.io/github/agalazis/ssm-params-convict-adapter)
+[![bithound](https://img.shields.io/bithound/code/github/agalazis/ssm-params-convict-adapter.svg)](https://www.bithound.io/github/agalazis/ssm-params-convict-adapter)
 
 ![](media/cong.jpg)
 
