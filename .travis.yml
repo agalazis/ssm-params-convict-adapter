@@ -11,5 +11,8 @@ cache:
   yarn: true
   directories:
     - node_modules
+instal:
+  - yarn
+  - yarn install-peers 
 script:
   - yarn lint && yarn test
