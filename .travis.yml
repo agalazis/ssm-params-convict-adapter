@@ -12,7 +12,8 @@ cache:
   directories:
     - node_modules
 before_script:
-  - echon $NODE_PATH
+  - echo $(which node)
+  - echo $NODE_PATH
   - npm install
   - npm run install-peers
 script:
