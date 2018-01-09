@@ -16,16 +16,19 @@ chai.use(sinonChai);
 const { expect } = chai;
 
 function testConfig(c: any) {
-    expect(c).to.be.an('object');
-    // @todo add more tests
-    expect(c).to.have.property('b', '{bv');
+	expect(c).to.be.an('object');
+	// @todo add more tests
+	expect(c).to.have.property('b', '{bv');
 }
 describe('constructParamsFromConvictSchema', () => {
-
-  context('When reparameters are provided', () => {
-    it('should return the right values', async () => {
-      const c = await SSMParamsConvictAdapter.convict(schema, false, ssmMockInstance as any);
-      testConfig(c.getProperties());
-    });
-  });
+	context('When reparameters are provided', () => {
+		it('should return the right values', async () => {
+			const c = await SSMParamsConvictAdapter.convict(
+				schema,
+				false,
+				ssmMockInstance as any
+			);
+			testConfig(c.getProperties());
+		});
+	});
 });
