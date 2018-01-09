@@ -12,7 +12,7 @@ cache:
   directories:
     - node_modules
 instal:
-  - yarn
   - yarn install-peers 
+  - yarn
 script:
   - yarn lint && yarn test
