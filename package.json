@@ -14,7 +14,7 @@
     "preCommit-msg": "ts-node accessories/pre-commit-log.ts",
     "copy-json": "gulp copy-json",
     "clean-build": "gulp clean-build",
-    "install-peers": "node node_modules/install-peers/install.js"
+    "install-peers": "npm-install-peers"
   },
   "repository": {
     "type": "git",
@@ -51,9 +51,9 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-cli": "^1.4.0",
-    "install-peers": "^1.0.2",
     "lme": "^1.5.3",
     "mocha": "^3.4.2",
+    "npm-install-peers": "^1.2.1",
     "pre-commit": "^1.2.2",
     "prettier": "^1.5.3",
     "proxyquire": "^1.8.0",
