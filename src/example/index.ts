@@ -1,7 +1,7 @@
-import * as winston from 'winston';
+import * as logger from 'winston';
 import SSMParamsConvictAdapter from '../ssm-params-convict-adapter';
 import schema from './schema';
-const logger = winston;
+
 (async () => {
   try {
     const config = await SSMParamsConvictAdapter.convict(schema);

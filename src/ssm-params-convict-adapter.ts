@@ -7,7 +7,7 @@ import { ISSMParamsAccumulator } from './interfaces';
 import { deepReduce } from './util';
 
 export default class SSMParamsConvictAdapter {
-  public static convict(schema: convict.Schema, validate?: boolean, ssm?:SSM): Promise<convict.Config> {
+  public static convict(schema: convict.Schema, validate?: boolean, ssm?: SSM): Promise<convict.Config> {
     const config = convict(schema);
     return this.loadSSMParams(config, schema, validate, ssm);
   }
@@ -27,16 +27,16 @@ export default class SSMParamsConvictAdapter {
       (
         acc: ISSMParamsAccumulator, val: any, key: any, obj: any, path: string, root: any,
       ) => {
-        if (key !== 'ssmPath') {
+        if (key !== 'ssmParameter') {
           return acc;
         }
-        const ssmPath = `ssm:${val.path}`;
+        const ssmParameter = `ssm:${val.path}`;
         if (!val.strict) {
-          set(acc.config, path, ssmPath );
-          acc.paths[path] = ssmPath;
+          set(acc.config, path, ssmParameter );
+          acc.paths[path] = ssmParameter;
           return acc;
         }
-        set(acc.strictConfig, path, ssmPath );
+        set(acc.strictConfig, path, ssmParameter );
         return acc;
       },
       {

@@ -15,16 +15,60 @@ npm i --save ssm-params-convict-adapter
 ```
 
 ## How it works?
-Optional
+The schema is expressed as a conventional convict schema with an extra property `ssmParameter` that eaccepts an object with two values the path and whether it should be strict when requesting the value (error in absence of a value).
+
+Example schema:
+```js
+const schema = {
+  auth: {
+    default: true,
+    doc: 'Whether authentication is required',
+    env: 'TESTDB_AUTH',
+    format: Boolean,
+  },
+  password: {
+    default: '',
+    doc: 'The example testdb password',
+    env: 'TESTDB_PASS',
+    format: String,
+    ssmParameter: {
+      path: '/testdb/db/password',
+      strict: false,
+    },
+  },
+  username: {
+    default: '',
+    doc: 'The example testdb username',
+    env: 'TESTDB_USER',
+    format: String,
+    ssmParameter: {
+      path: '/testdb/db/username',
+      strict: true,
+    },
+  },
+};
+export default schema;
+```
 
 ## Usage
-Describe usage
+Example usage:
+```js
+import * as logger from 'winston';
+import SSMParamsConvictAdapter from 'ssm-params-convict-adapter';
+import schema from './schema';
+
+(async () => {
+  try {
+    const config = await SSMParamsConvictAdapter.convict(schema);
+    logger.info(JSON.stringify(config.getProperties()));
+  } catch (e) {
+    logger.log('error', e);
+  }
+})();
+```
 
 ## Change log
-brief change log
-
-
-*Optionally in the end, mark version of the generator used:*
+v0.0.3
 
 [![used version of ts-np generator](https://img.shields.io/badge/ts--np-v1.0.2-a5a5a5.svg?style=flat-square)](https://github.com/vajahath/generator-ts-np)
 

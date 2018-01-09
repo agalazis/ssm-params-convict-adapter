@@ -10,7 +10,7 @@ const schema = {
     doc: 'The example testdb password',
     env: 'TESTDB_PASS',
     format: String,
-    ssmPath: {
+    ssmParameter: {
       path: '/testdb/db/password',
       strict: false,
     },
@@ -20,7 +20,7 @@ const schema = {
     doc: 'The example testdb username',
     env: 'TESTDB_USER',
     format: String,
-    ssmPath: {
+    ssmParameter: {
       path: '/testdb/db/username',
       strict: true,
     },
