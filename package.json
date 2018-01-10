@@ -25,7 +25,7 @@
     "url": "git+https://github.com/agalazis/ssm-params-convict-adapter.git"
   },
   "author": "Andreas Galazis <agalazis@gmail.com> (https://twitter.com/agalazis)",
-  "license": "MIT",
+  "license": "WTFPL",
   "bugs": {
     "url": "https://github.com/agalazis/ssm-params-convict-adapter/issues"
   },
