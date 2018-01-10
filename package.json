@@ -1,6 +1,6 @@
 {
   "name": "ssm-params-convict-adapter",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Allows loading ssm parameters via convict",
   "main": "dist/index.js",
   "typings": "index.d.ts",
@@ -31,8 +31,6 @@
   },
   "homepage": "https://github.com/agalazis/ssm-params-convict-adapter#readme",
   "dependencies": {
-    "@types/convict": "^4.1.1",
-    "@types/lodash": "^4.14.86",
     "aws-ssm-parameters-injector": "^1.0.8",
     "debug": "^3.1.0",
     "lodash": "^4.17.4",
@@ -41,8 +39,10 @@
   "devDependencies": {
     "@types/aws-sdk": "^2.7.0",
     "@types/chai": "^4.0.1",
+    "@types/convict": "^0.6.33",
     "@types/del": "^3.0.0",
     "@types/gulp": "^4.0.4",
+    "@types/lodash": "^4.14.86",
     "@types/mocha": "^2.2.41",
     "@types/node": "^8.0.5",
     "@types/proxyquire": "^1.3.28",
@@ -73,6 +73,6 @@
   ],
   "peerDependencies": {
     "aws-sdk": "^2.178.0",
-    "convict": "^4.0.1"
+    "convict": "^3.0.0"
   }
 }
