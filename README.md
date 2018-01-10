@@ -1,20 +1,38 @@
 # ssm-params-convict-adapter
 Allows loading ssm parameters via convict
 
+[![TypeScript](https://badges.frapsoft.com/typescript/code/typescript.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 [![npm](https://img.shields.io/npm/v/ssm-params-convict-adapter.svg)](https://www.npmjs.com/package/ssm-params-convict-adapter)
+[![node version](https://img.shields.io/node/v/ssm-params-convict-adapter/latest.svg)]()
+[![Dependency Security Status](https://david-dm.org/agalazis/ssm-params-convict-adapter.svg)](https://david-dm.org/agalazis/ssm-params-convict-adapter)
+[![Peer Dependencies Security Status](https://david-dm.org/agalazis/ssm-params-convict-adapter/peer-status.svg)](https://david-dm.org/agalazis/ssm-params-convict-adapter?type=peer)
 [![Travis](https://img.shields.io/travis/agalazis/ssm-params-convict-adapter.svg)](https://travis-ci.org/agalazis/ssm-params-convict-adapter)
-[![styled with prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/agalazis/ssm-params-convict-adapter/blob/master/.github/CONTRIBUTING.md)
+[![License](https://img.shields.io/github/license/agalazis/ssm-params-convict-adapter.svg)]()
 [![npm](https://img.shields.io/npm/dt/ssm-params-convict-adapter.svg)]()
 [![Built with generator-ts-np](https://img.shields.io/badge/scaffolding-ts_np-2699ad.svg)](https://github.com/vajahath/generator-ts-np)
-[![Dependency Security Status](https://david-dm.org/agalazis/ssm-params-convict-adapter.svg)](https://david-dm.org/agalazis/ssm-params-convict-adapter)
-[![node version](https://img.shields.io/node/v/ssm-params-convict-adapter/latest.svg)]()
+
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/05af23a820bd94699757/maintainability.svg)](https://codeclimate.com/github/agalazis/ssm-params-convict-adapter/maintainability)
 [![bithound](https://img.shields.io/bithound/code/github/agalazis/ssm-params-convict-adapter.svg)](https://www.bithound.io/github/agalazis/ssm-params-convict-adapter)
+[![styled with prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
+<!-- [![License](https://img.shields.io/github/license/agalazis/ssm-params-convict-adapter.svg)]
+() -->
 
 ![](media/cong.jpg)
 
 ## Install
+
 ```
 npm i --save ssm-params-convict-adapter
+```
+
+### Peer Dependencies
+Before installing this package you need the following peer dependencies installed in your project (If they are not already installed):
+
+```
+npm i -D aws-sdk convict
 ```
 
 ## How it works?
