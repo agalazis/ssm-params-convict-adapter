@@ -3,7 +3,7 @@
   "version": "0.0.10",
   "description": "Allows loading ssm parameters via convict",
   "main": "dist/index.js",
-  "typings": "index.d.ts",
+  "typings": "dist/index.d.ts",
   "engine-strict": true,
   "engines": {
     "node": ">=6.12.3"
